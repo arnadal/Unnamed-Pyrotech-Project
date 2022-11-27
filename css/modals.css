@@ -26,12 +26,14 @@ div.loginModal {
   border-radius: 15px;
 }
 
-div.modal.loginModal::-webkit-scrollbar,
-div.registerModal.loginModal::-webkit-scrollbar,
+body::-webkit-scrollbar,
+div.modal::-webkit-scrollbar,
+div.registerModal::-webkit-scrollbar,
 div.loginModal::-webkit-scrollbar {
   width: 10px;
 }
 
+body::-webkit-scrollbar-track,
 div.modal::-webkit-scrollbar-track,
 div.registerModal::-webkit-scrollbar-track,
 div.loginModal::-webkit-scrollbar-track {
@@ -39,6 +41,7 @@ div.loginModal::-webkit-scrollbar-track {
   border-radius: 15px;
 }
  
+body::-webkit-scrollbar-thumb,
 div.modal::-webkit-scrollbar-thumb,
 div.registerModal::-webkit-scrollbar-thumb,
 div.loginModal::-webkit-scrollbar-thumb {
@@ -46,12 +49,14 @@ div.loginModal::-webkit-scrollbar-thumb {
   border-radius: 15px;
 }
 
+body::-webkit-scrollbar-thumb:hover,
 div.modal::-webkit-scrollbar-thumb:hover,
 div.registerModal::-webkit-scrollbar-thumb:hover,
 div.loginModal::-webkit-scrollbar-thumb:hover {
   background-color: var(--color4_dark);
 }
 
+body::-webkit-scrollbar-corner,
 div.modal::-webkit-scrollbar-corner,
 div.registerModal::-webkit-scrollbar-corner,
 div.loginModal::-webkit-scrollbar-corner {
@@ -59,6 +64,7 @@ div.loginModal::-webkit-scrollbar-corner {
   border-radius: 15px;
 }
 
+body input,
 div.modal input,
 div.registerModal input,
 div.loginModal input {
