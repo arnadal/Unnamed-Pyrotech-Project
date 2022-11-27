@@ -20,4 +20,5 @@ div.modal {
   z-index: 65536;
   display: none;
   text-align: center;
+  overflow: auto;
 }
