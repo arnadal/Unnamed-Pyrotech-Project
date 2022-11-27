@@ -9,7 +9,7 @@ button {
   text-align: center;
   width: 50%;
   box-shadow: 0px 10px 10px #00000040;
-  transition: background-color 1s, filter 1s, box-shadow 1s;
+  transition: background-color 1s, filter 1s, box-shadow 1s, border-radius 1s;
 }
 
 button:hover,
@@ -17,4 +17,5 @@ button:active,
 button:focus {
   box-shadow: 0px 10px 10px #00000080;
   filter: brightness(75%);
+  border-radius: 30px;
 }

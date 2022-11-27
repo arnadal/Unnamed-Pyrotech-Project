@@ -7,6 +7,21 @@ body {
   color: var(--color1);
   padding: 5%;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+hr {
+  width: 50%;
+  border-style: solid;
+  border-width: 2.5px;
+  border-color: var(--color4);
+  background-color: var(--color4);
+  color: var(--color4);
 }
 
 h1,
