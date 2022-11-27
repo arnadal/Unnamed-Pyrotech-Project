@@ -11,7 +11,11 @@
   </head>
 
   <body>
-    <h1>Unnamed site</h1>
+    <nav>
+      <button id="loginButton">Login</button>
+      <button id="registerButton">Register</button>
+    </nav>
+    <h1 style="margin-top: calc(100% / 6);">Unnamed site</h1>
     <p>Site description</p>
     <br>
     <hr>
@@ -39,7 +43,8 @@
       <p id="modal_description">Description</p>
       <img id="modal_image"></img>
       <br>
-      <div id="modal_progressDiv0" style="color:white;">
+      <br>
+      <div id="modal_extras" style="color:white;">
         <label for="prog0">Something1:</label>
         <progress id="prog0" value="50" max="100"></progress>
         <label for="prog1">Something2:</label>
@@ -52,9 +57,46 @@
         <progress id="prog4" value="50" max="100"></progress>
       </div>
       <br>
+      <br>
       <button onclick="closeModal()">Continue</button>
     </div>
-    <div class="darkWrapper"></div>
+    <div class="loginModal">
+      <h1 id="loginModal_heading">Login</h1>
+      <p id="loginModal_description">Login to an existing account.</p>
+      <br>
+      <div id="loginModal_extras" style="color:white;">
+        <input id="loginModal_username" placeholder="Username"></input>
+        <br>
+        <br>
+        <input type="password" id="loginModal_pasword" placeholder="Password"></input>
+      </div>
+      <br>
+      <br>
+      <button onclick="login()">Login</button>
+      <br>
+      <br>
+      <button onclick="closeModal()">Cancel</button>
+    </div>
+    <div class="registerModal">
+      <h1 id="registerModal_heading">Register</h1>
+      <p id="registerModal_description">Create a new account.</p>
+      <br>
+      <div id="registerModal_extras" style="color:white;">
+        <input id="registerModal_username" placeholder="Username"></input>
+        <br>
+        <br>
+        <input type="password" id="registerModal_pasword" placeholder="Password"></input>
+      </div>
+      <br>
+      <br>
+      <button onclick="register()">Register</button>
+      <br>
+      <br>
+      <button onclick="closeModal()">Cancel</button>
+    </div>
+    <div class="darkWrapper">
+      <p style="position: fixed; bottom: 5%; text-align: center; font-size: 12px;">Click anywhere on the dark wrapper to close, faster.</p>
+    </div>
 
     <script src="js/modals.js"></script>
   </body>

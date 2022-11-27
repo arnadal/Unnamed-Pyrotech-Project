@@ -5,6 +5,18 @@
   --color1: #FFFFFF; /* default text color */
   --color2: #DDDDDD;
   --color3: #888888;
-  --color4: #9B7E46; --color4_translucent: #9B7E4680;
+  --color4: #9B7E46; --color4_translucent: #9B7E4680; --color4_dark: #544526;
   --color5: #000000; /* body background-color */
+}
+
+::selection {
+  background-color: var(--color2);
+  color: var(--color4);
+}
+
+div.modal ::selection,
+div.registerModal ::selection,
+div.loginModal ::selection {
+  background-color: var(--color4);
+  color: var(--color2);
 }

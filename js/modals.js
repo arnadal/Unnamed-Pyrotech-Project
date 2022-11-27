@@ -1,5 +1,7 @@
 var wrapper = document.querySelector(`.darkWrapper`);
 var modal = document.querySelector(`.modal`);
+var registerModal = document.querySelector(`.registerModal`);
+var loginModal = document.querySelector(`.loginModal`);
 var modalHeading = document.querySelector(`#modal_heading`);
 var modalDescription = document.querySelector(`#modal_description`);
 var modalImg = document.querySelector(`#modal_image`);
@@ -132,9 +134,26 @@ function openModal(x) {
   modalProgress2.setAttribute("value", modals[x].Progress2);
   modalProgress3.setAttribute("value", modals[x].Progress3);
   modalProgress4.setAttribute("value", modals[x].Progress4);
+  modalImg.style.display = `inline-block`;
+  document.querySelector(`#modal_extras`).style.display = `inline-block`;
+  document.querySelector(`#modal_loginInput`).style.display = `none`;
 };
 
 function closeModal() {
   modal.style.display = `none`;
+  loginModal.style.display = `none`;
+  registerModal.style.display = `none`;
   wrapper.style.display = `none`;
 };
+
+document.querySelector(`#loginButton`).onclick = openLogin;
+function openLogin() {
+  loginModal.style.display = `block`;
+  wrapper.style.display = `block`;
+}
+
+document.querySelector(`#registerButton`).onclick = openRegister;
+function openRegister() {
+  registerModal.style.display = `block`;
+  wrapper.style.display = `block`;
+}

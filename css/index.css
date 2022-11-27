@@ -15,10 +15,28 @@ img {
   border-radius: 15px;
 }
 
+nav {
+  background-color: var(--color4_translucent);
+  color: white;
+  text-align: left;
+  position: fixed;
+  width: 95%;
+  height: 5%;
+  top: 0;
+  left: 0;
+  padding: 2.5%;
+}
+
+nav button {
+  width: 10%;
+  float: right;
+  margin-left: 10px;
+}
+
 hr {
   width: 50%;
   border-style: solid;
-  border-width: 2.5px;
+  border-width: 2.5%;
   border-color: var(--color4);
   background-color: var(--color4);
   color: var(--color4);

@@ -9,7 +9,9 @@
   display: none;
 }
 
-div.modal {
+div.modal,
+div.registerModal,
+div.loginModal {
   background-color: var(--color2);
   color: var(--color4);
   width: 25%;
@@ -20,5 +22,48 @@ div.modal {
   z-index: 65536;
   display: none;
   text-align: center;
-  overflow: auto;
+  overflow: scroll;
+  border-radius: 15px;
+}
+
+div.modal.loginModal::-webkit-scrollbar,
+div.registerModal.loginModal::-webkit-scrollbar,
+div.loginModal::-webkit-scrollbar {
+  width: 10px;
+}
+
+div.modal::-webkit-scrollbar-track,
+div.registerModal::-webkit-scrollbar-track,
+div.loginModal::-webkit-scrollbar-track {
+  background-color: var(--color2);
+  border-radius: 15px;
+}
+ 
+div.modal::-webkit-scrollbar-thumb,
+div.registerModal::-webkit-scrollbar-thumb,
+div.loginModal::-webkit-scrollbar-thumb {
+  background-color: var(--color4);
+  border-radius: 15px;
+}
+
+div.modal::-webkit-scrollbar-thumb:hover,
+div.registerModal::-webkit-scrollbar-thumb:hover,
+div.loginModal::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color4_dark);
+}
+
+div.modal::-webkit-scrollbar-corner,
+div.registerModal::-webkit-scrollbar-corner,
+div.loginModal::-webkit-scrollbar-corner {
+  display: none;
+  border-radius: 15px;
+}
+
+div.modal input,
+div.registerModal input,
+div.loginModal input {
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
 }
