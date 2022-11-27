@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins&display=swap');
+
+/* Define color variables for the entire site, form a color scheme: */
+:root {
+  --color1: #FFFFFF; /* default text color */
+  --color2: #DDDDDD;
+  --color3: #888888;
+  --color4: #9B7E46; --color4_translucent: #9B7E4680;
+  --color5: #000000; /* body background-color */
+}

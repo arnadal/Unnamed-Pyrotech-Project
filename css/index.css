@@ -1,0 +1,36 @@
+body {
+  background-color: var(--color5);
+  color: var(--color1);
+  padding: 5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+div {
+  background-color: var(--color4);
+  border-radius: 15px;
+  padding: 2.5%;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  background-color: #9B7E4680;
+  padding: 10%;
+}
+
+.flexbox div:not(:first-child) {
+  margin-left: 2.5%;
+}
+
+.flexbox div {
+  width: calc(87.5% / 3);
+}
