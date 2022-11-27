@@ -24,7 +24,7 @@ div {
   display: flex;
   flex-direction: row;
   background-color: #9B7E4680;
-  padding: 10%;
+  padding: 5%;
 }
 
 .flexbox div:not(:first-child) {
