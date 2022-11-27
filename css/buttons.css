@@ -1,0 +1,20 @@
+button {
+  background-color: var(--color2);
+  border: none;
+  color: var(--color4);
+  padding: 15px;
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  width: 50%;
+  box-shadow: 0px 10px 10px #00000040;
+  transition: background-color 1s, filter 1s, box-shadow 1s;
+}
+
+button:hover,
+button:active,
+button:focus {
+  box-shadow: 0px 10px 10px #00000080;
+  filter: brightness(75%);
+}
